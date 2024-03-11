@@ -1,4 +1,6 @@
-let api_url = "https://swapi.dev/api/";
+// let api_url = "https://swapi.dev/api/";  //old domain link
+let api_url = 'https://swapi.py4e.com/api/'; //new domain link
+
 //Using JavaScript Fetch API
 //handling error cases: try - catch
 async function getResponse(url) {
@@ -11,7 +13,7 @@ async function getResponse(url) {
 }
 
 function getCapitalized(word) {
-  return (word[0].toUpperCase() + word.slice(1)).replace("_", " ");
+  return (word[0].toUpperCase() + word.slice(1)).replace('_', ' ');
 }
 
 export { api_url, getResponse, getCapitalized };
